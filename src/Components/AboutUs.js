@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { Link } from "react-router-dom";
 import { Container, Image, Button } from "react-bootstrap";
 export default function AboutUs() {
@@ -50,7 +49,7 @@ export default function AboutUs() {
   };
 
   return (
-    <div>
+    <div style={{ overflow: "hidden"}}>
         {/* === SECTION 1  === */}
     <div
         style={{
@@ -226,7 +225,6 @@ export default function AboutUs() {
           display: "flex",
           flexDirection: "column",
           alignItems: "flex-start",
-          overflow: "hidden",
         }}
       >
         {/* Repeating UniVibe background text on the RIGHT */}
@@ -234,7 +232,7 @@ export default function AboutUs() {
           style={{
             position: "absolute",
             top: "-20px",
-            right: "-50px",
+            right: "0",
             width: "55%",
             fontSize: "60px",
             fontWeight: "300",
@@ -243,7 +241,7 @@ export default function AboutUs() {
             transform: "rotate(-3deg)",
             pointerEvents: "none",
             textAlign: "right",
-            whiteSpace: "wrap",
+            whiteSpace: "normal",
           }}
         >
           UniVibe UniVibe UniVibe UniVibe UniVibe UniVibe UniVibe UniVibe UniVibe UniVibe UniVibe UniVibe UniVibe UniVibe UniVibe
@@ -318,7 +316,7 @@ export default function AboutUs() {
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
-            overflow: "hidden",
+            
         }}
         >
         {/* LEFT BOTTOM CORNER SILHOUETTES */}
@@ -326,9 +324,9 @@ export default function AboutUs() {
             style={{
             position: "absolute",
             left: "0",                   
-            bottom: "0",                
-            width: "750px",
-            height: "750px",
+            top:"-10em",                
+            width: "130%",
+            height: "130%",
             backgroundImage: "url('/silhouettes2.png')",
             backgroundSize: "contain",
             backgroundRepeat: "no-repeat",
@@ -343,7 +341,8 @@ export default function AboutUs() {
             style={{
             width: "55%",
             marginLeft: "auto",
-            zIndex: 3,
+            marginRight: "-10em",
+            zIndex: 3
             }}
         >
             <h2
@@ -379,10 +378,3 @@ export default function AboutUs() {
     </div>
   );
 }
-=======
-export default function AboutUs(){
-    return(
-        <div>About us</div>
-    )
-}
->>>>>>> 2333362b4540955db0970afbbb070af58f32f278
