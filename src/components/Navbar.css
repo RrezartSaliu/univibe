@@ -1,0 +1,79 @@
+.navbar {
+  position: absolute;            
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 60px;
+  box-sizing: border-box;
+  z-index: 10;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+
+.navbar-logo {
+  font-size: 32px;
+  font-weight: 800;
+  color: #ffd64d; 
+  text-decoration: none;
+}
+
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 32px; 
+}
+
+.nav-link {
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+.login-btn {
+  padding: 10px 24px;
+  border-radius: 999px;
+  border: none;
+  background-color: #ffd64d;
+  color: #0b2343;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  filter: brightness(0.95);
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 16px 20px;
+  }
+
+  .navbar-inner {
+    flex-direction: row;
+  }
+
+  .navbar-links {
+    gap: 16px;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+
+  .login-btn {
+    padding: 8px 18px;
+    font-size: 14px;
+  }
+}
